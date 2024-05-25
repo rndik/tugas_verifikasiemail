@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Email</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        async function sendVerificationEmail() {
+            const response = await fetch('/send-verification-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                alert("Harap cek email untuk link verifikasi.");
+            } else {
+                alert("Gagal mengirim email verifikasi.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Verifikasi Email</h1>
+        <button onclick="sendVerificationEmail()">Verifikasi Email</button>
+    </div>
+</body>
+</html>
