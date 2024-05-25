@@ -1,5 +1,3 @@
-Nama : Rendi Kurniawan
-#*Kelas : PABW A
-#*NIM : 11211073
+Rendi Kurniawan, 11211073, PABW A
 
 Saya menggunakan mailtrap sebagai email service providernya.
